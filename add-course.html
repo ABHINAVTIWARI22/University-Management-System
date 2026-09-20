@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Course | UMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="brand">UMS <span>GLA UNIVERSITY, MATHURA</span></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="student-list.html">Students</a></li>
+    <li><a href="faculty-list.html">Faculty</a></li>
+    <li><a href="#">Attendance</a></li>
+    <li><a href="#">Exams &amp; Fees</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <p><a href="course-list.html">&larr; Back to courses</a></p>
+
+  <div class="page-header">
+    <h1>Add new course</h1>
+    <p>Add a new course offering to the university academic curriculum.</p>
+  </div>
+
+  <div class="card" style="max-width: 680px;">
+    <form>
+      <h3>Course information</h3>
+      <div class="field-row">
+        <div class="field">
+          <label for="code">Course code</label>
+          <input type="text" id="code" placeholder="e.g. BCS-505">
+        </div>
+        <div class="field">
+          <label for="title">Course title</label>
+          <input type="text" id="title" placeholder="e.g. Artificial Intelligence">
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="dept">Department</label>
+          <select id="dept">
+            <option>Computer Science &amp; Engineering</option>
+            <option>Information Technology</option>
+            <option>Electronics &amp; Communication</option>
+            <option>Mechanical Engineering</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="type">Course type</label>
+          <select id="type">
+            <option>Core Theory</option>
+            <option>Departmental Elective</option>
+            <option>Open Elective</option>
+            <option>Practical / Lab</option>
+          </select>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 28px;">Curriculum &amp; Faculty allocation</h3>
+      <div class="field-row">
+        <div class="field">
+          <label for="semester">Semester</label>
+          <select id="semester">
+            <option>1st Semester</option>
+            <option>2nd Semester</option>
+            <option>3rd Semester</option>
+            <option>4th Semester</option>
+            <option selected>5th Semester</option>
+            <option>6th Semester</option>
+            <option>7th Semester</option>
+            <option>8th Semester</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="credits">Total credits</label>
+          <input type="text" id="credits" placeholder="e.g. 4">
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="ltp">L-T-P structure</label>
+          <input type="text" id="ltp" placeholder="e.g. 3-1-0">
+        </div>
+        <div class="field">
+          <label for="faculty">Faculty incharge</label>
+          <select id="faculty">
+            <option>Dr. Neha Kapoor (FAC-CSE-101)</option>
+            <option>Prof. Rajesh Verma (FAC-CSE-102)</option>
+            <option>Dr. Amit Singhal (FAC-CSE-103)</option>
+            <option>Dr. Pooja Sharma (FAC-CSE-104)</option>
+            <option>Prof. Vikram Dixit (FAC-CSE-105)</option>
+            <option>Dr. Sunita Saxena (FAC-CSE-106)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="prereq">Prerequisite courses</label>
+        <input type="text" id="prereq" placeholder="e.g. Data Structures & Algorithms (BCS-301)">
+      </div>
+
+      <div class="hint">This is a static demo page — the form does not submit or save data.</div>
+
+      <button type="button" class="btn btn-primary" style="width: auto;">Add course</button>
+      <button type="button" class="btn btn-outline" style="width: auto;">Clear form</button>
+    </form>
+  </div>
+</div>
+
+<footer>University Management System &middot; B.Tech CSE 3rd Year &middot; GLA University, Mathura</footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark Attendance | UMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="brand">UMS <span>GLA UNIVERSITY, MATHURA</span></div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="student-list.html">Students</a></li>
+    <li><a href="#">Faculty</a></li>
+    <li><a href="attendance-mark.html" class="active">Attendance</a></li>
+    <li><a href="#">Exams &amp; Fees</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="page-header" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+    <div>
+      <h1>Mark attendance</h1>
+      <p>B.Tech CSE, 3rd Year, Section A &mdash; 20 September 2026</p>
+    </div>
+    <a href="attendance-report.html" class="btn btn-outline">View report</a>
+  </div>
+
+  <div class="card" style="padding: 0; overflow: hidden;">
+    <table>
+      <thead>
+        <tr>
+          <th>Roll No.</th>
+          <th>Name</th>
+          <th>Present</th>
+          <th>Absent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2301CS0101</td>
+          <td>Abhinav Kumar Tiwari</td>
+          <td><input type="radio" name="a1" checked></td>
+          <td><input type="radio" name="a1"></td>
+        </tr>
+        <tr>
+          <td>2301CS0102</td>
+          <td>Abhiraj Sharma</td>
+          <td><input type="radio" name="a2" checked></td>
+          <td><input type="radio" name="a2"></td>
+        </tr>
+        <tr>
+          <td>2301CS0103</td>
+          <td>Abhishek Sharma</td>
+          <td><input type="radio" name="a3" checked></td>
+          <td><input type="radio" name="a3"></td>
+        </tr>
+        <tr>
+          <td>2301CS0104</td>
+          <td>Abhishek Yadav</td>
+          <td><input type="radio" name="a4"></td>
+          <td><input type="radio" name="a4" checked></td>
+        </tr>
+        <tr>
+          <td>2301CS0105</td>
+          <td>Riya Sharma</td>
+          <td><input type="radio" name="a5"></td>
+          <td><input type="radio" name="a5" checked></td>
+        </tr>
+        <tr>
+          <td>2301CS0106</td>
+          <td>Karan Mehta</td>
+          <td><input type="radio" name="a6" checked></td>
+          <td><input type="radio" name="a6"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="hint" style="margin-top: 16px;">This is a static demo page &mdash; attendance selections do not save (no backend).</div>
+
+  <button type="button" class="btn btn-primary" style="width: auto;">Save attendance</button>
+</div>
+
+<footer>University Management System &middot; B.Tech CSE 3rd Year &middot; GLA University, Mathura</footer>
+
+</body>
+</html>
